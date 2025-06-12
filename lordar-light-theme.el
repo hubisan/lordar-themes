@@ -115,7 +115,7 @@
       (background-93 "#f7e9d5")
       (background-94 "#f8ecdb")
       (background-95 "#f9efe1")
-      (cream background-93)
+      (cream background-95)
       (background cream)
 
       (foreground-black "#000000")
@@ -155,6 +155,7 @@
 
       ;; Die Farbe welche Swiper nutzt, das Grün von weiss nicht wo, ist ne
       ;; coole hightlight farbe. Prüfen.
+      ;; #b4eeb4 - darkseagreen2
       (grey "#505050")
       (grey-faded "#6a6764")
       (grey-subtle "#e3d4be"))          ; #cec2af
@@ -193,9 +194,9 @@
    ;; `(escape-glyph ((((background dark)) (:foreground "cyan")) (((type pc)) (:foreground "magenta")) (t (:foreground "brown"))))
    ;; `(homoglyph ((((background dark)) (:foreground "cyan")) (((type pc)) (:foreground "magenta")) (t (:foreground "brown"))))
    ;; `(minibuffer-prompt ((t (:foreground "#84ADFF"))))
-   ;; #b4eeb4
-   `(highlight ((t (:background "darkseagreen2" :distant-foreground ,foreground))))
-   ;; `(region ((t (:extend t :background "#332673"))))
+   ;; #b4eeb4 - darkseagreen2
+   `(highlight ((t (:background "#ede0ad" :distant-foreground ,foreground))))
+   `(region ((t (:extend t :background "#ede0ad" :distant-foreground ,foreground))))
    ;; `(shadow ((t (:foreground "#e1e2e5"))))
    ;; `(secondary-selection ((t (:extend t :background "#2b293b"))))
    ;; `(trailing-whitespace ((t (:underline (:color "#FE0400" :style wave :position nil) :background "#272829"))))
@@ -240,9 +241,9 @@
    ;; `(mode-line-emphasis ((t (:foreground "#FF80E3"))))
    ;; `(mode-line-highlight ((t (:foreground "#FF80E3"))))
    `(mode-line-inactive ((t (:background "#e8dbc8" :foreground "#90826d"))))
-   ;; `(isearch ((t (:inverse-video t :foreground "#ffb54c" :background "#090517"))))
+   `(isearch ((t (:background "darkseagreen2" :distant-foreground ,foreground))))
    ;; `(isearch-fail ((t (:foreground "#090517" :background "#FF6D3C"))))
-   ;; `(lazy-highlight ((t (:inverse-video t :foreground "#A9A4FF" :background "#090517"))))
+   `(lazy-highlight ((t (:background "darkseagreen2" :distant-foreground ,foreground))))
    ;; `(match ((t (:inverse-video t :foreground "#ffb54c" :background "#090517"))))
    ;; `(next-error ((t (:inherit (region)))))
    ;; `(query-replace ((t (:inherit (isearch)))))
