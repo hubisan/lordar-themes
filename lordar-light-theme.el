@@ -111,11 +111,11 @@
 ;; Faded means the colors is faded but still has a contrast ratio of around 4.5.
 ;; Subtle means there is just a hint of the color left.
 (let* (
-      (background-92 "#f6e5cc")
       (background-93 "#f7e9d5")
       (background-94 "#f8ecdb")
       (background-95 "#f9efe1")
-      (cream background-95)
+      ;; Irgendwie kommt es auf den Bildschirm drauf an.
+      (cream background-94)
       (background cream)
 
       (foreground-black "#000000")
