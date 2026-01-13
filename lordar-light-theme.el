@@ -120,7 +120,8 @@
 
       (foreground-black "#000000")
       (foreground-grey "#1b1b1b")
-      (foreground foreground-grey)
+      (foreground-grey-2 "#121212")
+      (foreground foreground-grey-2)
 
       (red-bright "")
       (red "#a30030")
