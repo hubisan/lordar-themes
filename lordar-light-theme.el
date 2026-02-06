@@ -115,13 +115,21 @@
       (background-94 "#f8ecdb")
       (background-95 "#f9efe1")
       ;; Irgendwie kommt es auf den Bildschirm drauf an.
-      (cream background-94)
-      (background cream)
+      (cream background-95)
+      (background-readest "#F1E8D0")
+      (background background-readest)
+      ;; (background-at-night "#E7DDC5")
+      ;; (background background-at-night)
 
       (foreground-black "#000000")
       (foreground-grey "#1b1b1b")
       (foreground-grey-2 "#121212")
-      (foreground foreground-grey-2)
+      (foreground-readest "#5b4636")
+      (foreground foreground-readest)
+      ;; (foreground-zwischendrin "#4b3725")
+      ;; (foreground foreground-zwischendrin)
+      ;; (foreground-gpt3 "#3A2A1B")
+      ;; (foreground foreground-gpt3)
 
       (red-bright "")
       (red "#a30030")
@@ -197,7 +205,7 @@
    ;; `(minibuffer-prompt ((t (:foreground "#84ADFF"))))
    ;; #b4eeb4 - darkseagreen2
    `(highlight ((t (:background "#ede0ad" :distant-foreground ,foreground))))
-   `(region ((t (:extend t :background "#ede0ad" :distant-foreground ,foreground))))
+   `(region ((t (:extend t :background "#b4eeb4" :distant-foreground ,foreground))))
    ;; `(shadow ((t (:foreground "#e1e2e5"))))
    ;; `(secondary-selection ((t (:extend t :background "#2b293b"))))
    ;; `(trailing-whitespace ((t (:underline (:color "#FE0400" :style wave :position nil) :background "#272829"))))
@@ -270,7 +278,34 @@
 
 ;;;;; Outline
 
-   `(outline-minor-1 ((t (:foreground ,foreground :weight bold :height 1.08))))
+   `(org-level-1 ((t (:foreground ,foreground-black :weight semi-bold :slant normal :height 1.00))))
+   `(org-level-2 ((t (:foreground ,foreground-black :weight semi-bold :slant normal :height 1.00))))
+   `(org-level-3 ((t (:foreground ,foreground-black :weight semi-bold :slant normal :height 1.00))))
+   `(org-level-3 ((t (:foreground ,foreground-black :weight semi-bold :slant italic :height 1.00))))
+   `(org-link ((t (:foreground "#412fbd" :weight normal :slant normal :height 1.00))))
+   `(org-todo ((t (:foreground "#950048" :weight semi-bold :slant normal :height 1.00))))
+   ;; Look already okay: TODO, NEXT,
+   ;; (setq org-todo-keyword-faces
+   ;;       '(("INBOX" . "#979AA1")
+   ;;         ("TODO" . "#da6d94")
+   ;;         ("NEXT" . "#94004e")
+   ;; Besser so, halt weniger Kontrast aber viel auffälliger
+   ;; ("NEXT" . "#ea0064")
+   ;;         ("WAIT" . "#763900")
+   ;;         ("DOING" . "#005447")
+   ;;         ("DONE" . "#005352")
+   ;; Aus dem besseren Next abgeleitet
+   ;; ("DONE" . "#008583")
+   ;;         ("CANCEL" . "#2a5c4a")
+
+   ;;         ("LEARN" . "#979AA1")
+   ;;         ("ANKI" . "#979AA1")
+   ;;         ("HARD" . "#FF256F")
+   ;;         ("GOOD" . "#ba843b")
+   ;;         ("EASY" . "#009963")
+   ;;         ("STORED" . "#2a5c4a")))
+
+   `(outline-minor-1 ((t (:foreground ,foreground-black :weight bold :height 1.08))))
    `(outline-minor-2 ((t (:foreground ,foreground :weight bold :height 1.04))))
    `(outline-minor-3 ((t (:foreground ,foreground :weight bold :height 1.00))))
    `(outline-minor-4 ((t (:foreground ,foreground :weight semi-bold))))
