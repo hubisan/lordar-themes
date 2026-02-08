@@ -117,9 +117,11 @@
       ;; (background background-at-night)
 
       (foreground-black "#000000")
-      (foreground-readest "#5b4636")
-      (foreground foreground-readest)
-      (foreground "#5f3e39")
+      ;; (foreground-readest "#5b4636")
+      ;; (foreground foreground-readest)
+      ;; (foreground "#5f3e39")
+      ;; More Kontrast ist besser
+      (foreground "#432a26")
 
       ;; Für Subtle und Faded dies verwenden:
       ;; https://codepen.io/Hubisan/pen/BjMOOZ
@@ -176,7 +178,7 @@
       ;; coole hightlight farbe. Prüfen.
       ;; #b4eeb4 - darkseagreen2
       (grey "#505050")
-      (grey-faded "#6a6764")
+      (grey-faded "#ad9387")
       (grey-subtle "#e3d4be"))          ; #cec2af
 
   (custom-theme-set-faces
@@ -270,12 +272,16 @@
    `(doom-modeline-bar ((t (:inherit mode-line))))
    `(doom-modeline-bar-inactive ((t (:inherit mode-line-inactive))))
 
-   ;; `(hl-line ((t (:background ,blue-subtle))))
    `(hl-line ((t (:background "#ede1d0"))))
-   ;; `(hl-line ((t (:background "#eedfd0"))))
 
-   `(show-paren-match ((t (:foreground unspecified :background unspecified :weight bold))))
+   `(show-paren-match ((t (:foreground unspecified :background unspecified))))
    `(show-paren-mismatch ((t (:inherit lordar-light-theme-error-inversed))))
+
+   ;;;; smartparens
+   `(sp-show-pair-enclosing ((t (:foreground ,background :background ,blue))))
+   `(sp-show-pair-match-content-face ((t (:foreground unspecified :background unspecified))))
+   `(sp-show-pair-match-face ((t (:foreground ,background :background ,blue))))
+   `(sp-show-pair-mismatch-face ((t (:inherit show-paren-mismatch))))
 
    ;;;; rainbow-delimiters
    `(rainbow-delimiters-depth-1-face ((t (:foreground ,grey-faded))))
@@ -342,8 +348,8 @@
 
 ;;;;; Hl-Parens
 
-   `(highlight-parentheses-background-colors '(,green))
-   `(highlight-parentheses-colors '(,red))
+   `(highlight-parentheses-background-colors '(,blue-subtle))
+   `(highlight-parentheses-colors '(,blue))
 
 ;;;;; Evil-Mode
 
