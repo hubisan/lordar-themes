@@ -111,30 +111,40 @@
 ;; Faded means the colors is faded but still has a contrast ratio of around 4.5.
 ;; Subtle means there is just a hint of the color left.
 (let* (
-      (background-93 "#f7e9d5")
-      (background-94 "#f8ecdb")
-      (background-95 "#f9efe1")
-      ;; Irgendwie kommt es auf den Bildschirm drauf an.
-      (cream background-95)
       (background-readest "#F1E8D0")
       (background background-readest)
       ;; (background-at-night "#E7DDC5")
       ;; (background background-at-night)
 
       (foreground-black "#000000")
-      (foreground-grey "#1b1b1b")
-      (foreground-grey-2 "#121212")
       (foreground-readest "#5b4636")
       (foreground foreground-readest)
-      ;; (foreground-zwischendrin "#4b3725")
-      ;; (foreground foreground-zwischendrin)
-      ;; (foreground-gpt3 "#3A2A1B")
-      ;; (foreground foreground-gpt3)
+      (foreground "#5f3e39")
+
+      ;; Für Subtle und Faded dies verwenden:
+      ;; https://codepen.io/Hubisan/pen/BjMOOZ
+
+      ;; Red Neu, 8.2.26
+      ;; S 65.6, L 42.5
+      (red-neu "#b33939")
+      ;; So wäre es wie fg mit l 30, dafür S 100
+      (red-fg "#930000")
+      ;; mit 80 S
+      (red-fg-1 "#891c1c")
+
+      ;; Auch bereits cool, verwende ich ja für String und Defun
+      ;; So etwas sicherlich beibehalten, hat Hue 251, einfach meinen verwenden
+      ;; mit 255. Nicht unbeding für Strings, da passt Teal nicht.
+      (teal "#005290")
+      ;; Habe ich ja da 272 hue. Hier 30 l und 74 S
+      ;; Ist sehr stark mit 100 Saturation
+      (blue "#502ea1")
 
       (red-bright "")
       (red "#a30030")
       (red-faded "#b53e48")
       (red-subtle "#efcfb9")            ; #e9b9a6
+
       (brown "#7A5C31")
       (orange "#843a00")
       (orange-faded "#9a5625")
@@ -146,7 +156,7 @@
       (green "#005b4c")
       (green-faded "#3b7260")
       (green-subtle "#dcd5bd")          ; #c3c5ae
-      (teal "#005290")
+      (teal "#004f9f")
       (teal-faded "#48699b")
       (teal-subtle "#e0d4c6")           ; #c9c2b
       ;; (blue "#5139b4")
@@ -282,7 +292,7 @@
    `(org-level-2 ((t (:foreground ,foreground-black :weight semi-bold :slant normal :height 1.00))))
    `(org-level-3 ((t (:foreground ,foreground-black :weight semi-bold :slant normal :height 1.00))))
    `(org-level-3 ((t (:foreground ,foreground-black :weight semi-bold :slant italic :height 1.00))))
-   `(org-link ((t (:foreground "#412fbd" :weight normal :slant normal :height 1.00))))
+   `(org-link ((t (:foreground "#3d00b7" :weight normal :slant normal :height 1.00))))
    `(org-todo ((t (:foreground "#950048" :weight semi-bold :slant normal :height 1.00))))
    ;; Look already okay: TODO, NEXT,
    ;; (setq org-todo-keyword-faces
