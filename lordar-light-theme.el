@@ -119,8 +119,8 @@
       (foreground-black "#000000")
       ;; (foreground-readest "#5b4636")
       ;; (foreground foreground-readest)
-      ;; (foreground "#5f3e39")
-      ;; More Kontrast ist besser
+      ;; ;; (foreground "#5f3e39")
+      ;; ;; More Kontrast ist besser
       (foreground "#432a26")
 
       ;; Für Subtle und Faded dies verwenden:
@@ -133,6 +133,10 @@
       (red-fg "#930000")
       ;; mit 80 S
       (red-fg-1 "#891c1c")
+
+      ;; Great face to show matches, is from swiper
+      ;;        Foreground: #090517
+      ;;        Background: #ffb54c
 
       ;; Auch bereits cool, verwende ich ja für String und Defun
       ;; So etwas sicherlich beibehalten, hat Hue 251, einfach meinen verwenden
@@ -222,16 +226,17 @@
    ;; `(secondary-selection ((t (:extend t :background "#2b293b"))))
    ;; `(trailing-whitespace ((t (:underline (:color "#FE0400" :style wave :position nil) :background "#272829"))))
    ;; `(font-lock-bracket-face ((t (:inherit (font-lock-punctuation-face)))))
-   `(font-lock-builtin-face ((t (:foreground ,blue))))
-   `(font-lock-comment-face ((t (:foreground "#8d8fa8"))))
-   '(font-lock-comment-delimiter-face ((t (:inherit font-lock-comment-face))))
-   ;; `(font-lock-constant-face ((t (:foreground "#00D7C5"))))
+   `(font-lock-comment-face ((t (:foreground "#9a8e89"))))
+   '(font-lock-comment-delimiter-face ((t (:foreground "#9a8e89"))))
+   `(font-lock-doc-face ((t (:foreground "#9a8e89"))))
+   `(font-lock-constant-face ((t (:foreground ,foreground))))
    ;; `(font-lock-delimiter-face ((t (:inherit (font-lock-punctuation-face)))))
    ;; `(font-lock-doc-markup-face ((t (:inherit (font-lock-constant-face)))))
    ;; `(font-lock-escape-face ((t (:inherit (font-lock-regexp-grouping-backslash)))))
    ;; `(font-lock-function-call-face ((t (:inherit (font-lock-function-name-face)))))
-   `(font-lock-function-name-face ((t (:foreground ,blue))))
-   `(font-lock-keyword-face ((t (:foreground ,blue))))
+   `(font-lock-function-name-face ((t (:foreground "#7d0001"))))
+   ;; `(font-lock-keyword-face ((t (:foreground "#b90060"))))
+   `(font-lock-keyword-face ((t (:foreground ,foreground :weight semi-bold))))
    ;; `(font-lock-negation-char-face ((t (:foreground "#FE0400"))))
    ;; `(font-lock-number-face ((t nil)))
    ;; `(font-lock-misc-punctuation-face ((t (:inherit (font-lock-punctuation-face)))))
@@ -242,10 +247,16 @@
    ;; `(font-lock-punctuation-face ((t nil)))
    ;; `(font-lock-regexp-grouping-backslash ((t (:foreground "#00D2F2"))))
    ;; `(font-lock-regexp-grouping-construct ((t (:foreground "#C877F0"))))
-   `(font-lock-string-face ((t (:foreground ,teal))))
-   `(font-lock-doc-face ((t (:inherit font-lock-string-face))))
-   ;; `(font-lock-type-face ((t (:foreground "#FF8A9D"))))
-   `(font-lock-variable-name-face ((t (:foreground ,purple))))
+   ;; `(font-lock-string-face ((t (:foreground "#9b4500"))))
+   `(font-lock-string-face ((t (:foreground "#9b5536"))))
+   `(font-lock-type-face ((t (:foreground "#3a0093"))))
+   `(font-lock-variable-name-face ((t (:foreground "#4f2aaa" :weight semi-bold))))
+   `(font-lock-builtin-face ((t (:foreground "#4c378f"))))
+   ;; `(font-lock-function-name-face ((t (:foreground "#3a0093"))))
+   `(font-lock-function-name-face ((t (:foreground "#4f2aaa" :weight semi-bold))))
+   `(highlight-quoted-quote ((t (:inherit default))))
+   `(highlight-quoted-symbol ((t (:inherit default))))
+
    ;; `(font-lock-variable-use-face ((t (:inherit (font-lock-variable-name-face)))))
    ;; `(font-lock-warning-face ((t (:foreground "#FF6D3C"))))
    ;; `(button ((t (:underline nil :foreground "#A9A4FF"))))
@@ -294,11 +305,12 @@
 
 ;;;;; Outline
 
-   `(org-level-1 ((t (:foreground ,foreground-black :weight semi-bold :slant normal :height 1.00))))
-   `(org-level-2 ((t (:foreground ,foreground-black :weight semi-bold :slant normal :height 1.00))))
-   `(org-level-3 ((t (:foreground ,foreground-black :weight semi-bold :slant normal :height 1.00))))
-   `(org-level-3 ((t (:foreground ,foreground-black :weight semi-bold :slant italic :height 1.00))))
-   `(org-link ((t (:foreground "#3d00b7" :weight normal :slant normal :height 1.00))))
+   ;; Wie Foreground einfach mit L10 und S100
+   `(org-level-1 ((t (:foreground "#341007" :weight semi-bold :slant normal :height 1.00))))
+   `(org-level-2 ((t (:foreground "#341007" :weight semi-bold :slant normal :height 1.00))))
+   `(org-level-3 ((t (:foreground "#341007" :weight semi-bold :slant normal :height 1.00))))
+
+   `(org-link ((t (:foreground "#3d00b7"))))
    `(org-todo ((t (:foreground "#950048" :weight semi-bold :slant normal :height 1.00))))
    ;; Look already okay: TODO, NEXT,
    ;; (setq org-todo-keyword-faces
@@ -321,9 +333,10 @@
    ;;         ("EASY" . "#009963")
    ;;         ("STORED" . "#2a5c4a")))
 
-   `(outline-minor-1 ((t (:foreground ,foreground-black :weight bold :height 1.08))))
-   `(outline-minor-2 ((t (:foreground ,foreground :weight bold :height 1.04))))
-   `(outline-minor-3 ((t (:foreground ,foreground :weight bold :height 1.00))))
+
+   `(outline-minor-1 ((t (:foreground "#341007" :weight semi-bold :slant normal :height 1.00))))
+   `(outline-minor-2 ((t (:foreground "#341007" :weight semi-bold :slant normal :height 1.00))))
+   `(outline-minor-3 ((t (:foreground "#341007" :weight semi-bold :slant normal :height 1.00))))
    `(outline-minor-4 ((t (:foreground ,foreground :weight semi-bold))))
    `(outline-minor-5 ((t (:foreground ,foreground :weight semi-bold))))
    `(outline-minor-6 ((t (:foreground ,foreground :weight semi-bold))))
