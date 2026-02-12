@@ -134,6 +134,11 @@
       ;; mit 80 S
       (red-fg-1 "#891c1c")
 
+      ;; Auch noch easy, müsste etwas mehr Kontrast haben:
+      ;; #FF4B0F
+      ;; Kann man auch mit Hue 12 verwenden, sieht keinen Unterschied.
+      ;; #FF4849, noch besser
+
       ;; Great face to show matches, is from swiper
       ;;        Foreground: #090517
       ;;        Background: #ffb54c
@@ -258,7 +263,9 @@
    `(highlight-quoted-symbol ((t (:inherit default))))
 
    ;; `(font-lock-variable-use-face ((t (:inherit (font-lock-variable-name-face)))))
-   ;; `(font-lock-warning-face ((t (:foreground "#FF6D3C"))))
+   ;; Knallig und etwas weniger
+   `(font-lock-warning-face ((t (:foreground "#fe0006"))))
+   ;; `(font-lock-warning-face ((t (:foreground "#c00003"))))
    ;; `(button ((t (:underline nil :foreground "#A9A4FF"))))
    ;; `(link ((t (:underline nil :foreground "#A9A4FF"))))
    ;; `(link-visited ((t (:underline nil :foreground "#918BFF"))))
