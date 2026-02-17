@@ -139,6 +139,24 @@
       ;; Kann man auch mit Hue 12 verwenden, sieht keinen Unterschied.
       ;; #FF4849, noch besser
 
+      ;; Noch cool als Background:
+      ;; #add8e6
+
+      ;; Ein faded Blau: #A9A4FF
+      ;; Nettes grün, geht sogar als Background, wenn Text dunkel ist:
+      ;; #47C299
+      ;; Auch so mit Orange/Rot
+      ;; Und mit Orange
+      ;; #FF6D3C
+
+      ;; Die Cursor-Farbe wie bisher ist eigentlich cool. Einfach beim Insert
+      ;; Mode wechseln, damit nicht so störend. Was Blaues.
+
+      ;; Oh cool, popigs Purple/Rot:
+      ;; #FF0066
+
+      ;;
+
       ;; Great face to show matches, is from swiper
       ;;        Foreground: #090517
       ;;        Background: #ffb54c
