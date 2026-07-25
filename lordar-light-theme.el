@@ -332,14 +332,16 @@
 
 ;;;;; Outline
 
-   ;; Wie Foreground einfach mit L10 und S100
    `(org-level-1 ((t (:foreground "#4A2E2B" :weight bold :slant normal :height 1.00))))
-   `(org-level-2 ((t (:foreground "#2B4C5E" :weight bold :slant normal :height 1.00))))
-   `(org-level-3 ((t (:foreground "#3B5A45" :weight bold :slant normal :height 1.00))))
-   `(org-level-4 ((t (:foreground "#8C4331" :weight bold :slant normal :height 1.00))))
-   `(org-level-5 ((t (:foreground "#8C6D2B" :weight bold :slant normal :height 1.00))))
-   `(org-level-6 ((t (:foreground "#5C6B73" :weight bold :slant normal :height 1.00))))
-   `(org-level-7 ((t (:foreground "#414db5" :weight bold :slant normal :height 1.00))))
+   ;; Coole Farben:
+   ;; `(org-level-1 ((t (:foreground "#3b1085" :weight bold :slant normal :height 1.00))))
+   ;; `(org-level-2 ((t (:foreground "#531ab6" :weight bold :slant normal :height 1.00))))
+   ;; `(org-level-2 ((t (:foreground "#2B4C5E" :weight bold :slant normal :height 1.00))))
+   ;; `(org-level-3 ((t (:foreground "#3B5A45" :weight bold :slant normal :height 1.00))))
+   ;; `(org-level-4 ((t (:foreground "#8C4331" :weight bold :slant normal :height 1.00))))
+   ;; `(org-level-5 ((t (:foreground "#8C6D2B" :weight bold :slant normal :height 1.00))))
+   ;; `(org-level-6 ((t (:foreground "#5C6B73" :weight bold :slant normal :height 1.00))))
+   ;; `(org-level-7 ((t (:foreground "#414db5" :weight bold :slant normal :height 1.00))))
    `(org-hide ((t (:foreground ,background))))
 
    `(org-link ((t (:foreground "#3d00b7"))))
