@@ -111,17 +111,19 @@
 ;; Faded means the colors is faded but still has a contrast ratio of around 4.5.
 ;; Subtle means there is just a hint of the color left.
 (let* (
-      (background-readest "#F1E8D0")
-      (background background-readest)
-      ;; (background-at-night "#E7DDC5")
-      ;; (background background-at-night)
+      ;; (background-readest "#F1E8D0")
+      ;; (background background-readest)
+      ;; ;; 25.7.2026
+      (background-in-between "#f4e6d4")
+      (background background-in-between)
 
       (foreground-black "#000000")
       ;; (foreground-readest "#5b4636")
       ;; (foreground foreground-readest)
       ;; ;; (foreground "#5f3e39")
       ;; ;; More Kontrast ist besser
-      (foreground "#432a26")
+      ;; (foreground "#432a26")
+      (foreground "#2E2C2B")
 
       ;; Für Subtle und Faded dies verwenden:
       ;; https://codepen.io/Hubisan/pen/BjMOOZ
@@ -331,9 +333,14 @@
 ;;;;; Outline
 
    ;; Wie Foreground einfach mit L10 und S100
-   `(org-level-1 ((t (:foreground "#341007" :weight semi-bold :slant normal :height 1.00))))
-   `(org-level-2 ((t (:foreground "#341007" :weight semi-bold :slant normal :height 1.00))))
-   `(org-level-3 ((t (:foreground "#341007" :weight semi-bold :slant normal :height 1.00))))
+   `(org-level-1 ((t (:foreground "#4A2E2B" :weight bold :slant normal :height 1.00))))
+   `(org-level-2 ((t (:foreground "#2B4C5E" :weight bold :slant normal :height 1.00))))
+   `(org-level-3 ((t (:foreground "#3B5A45" :weight bold :slant normal :height 1.00))))
+   `(org-level-4 ((t (:foreground "#8C4331" :weight bold :slant normal :height 1.00))))
+   `(org-level-5 ((t (:foreground "#8C6D2B" :weight bold :slant normal :height 1.00))))
+   `(org-level-6 ((t (:foreground "#5C6B73" :weight bold :slant normal :height 1.00))))
+   `(org-level-7 ((t (:foreground "#414db5" :weight bold :slant normal :height 1.00))))
+   `(org-hide ((t (:foreground ,background))))
 
    `(org-link ((t (:foreground "#3d00b7"))))
    `(org-todo ((t (:foreground "#950048" :weight semi-bold :slant normal :height 1.00))))
